@@ -239,6 +239,8 @@ FREQUENCY = 1/(TOTAL TIME)
           = 1/(410^-3)
           = 250Hz
 ```
+![image](https://github.com/abinayasangeetha/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/119393675/9d331f1b-8f31-4ce7-8ac7-52bb6c472c0f)
+
 #### FOR PULSE AT 700
 ```
 TON = 2.17ms
@@ -248,6 +250,8 @@ FREQUENCY = 1/(TOTAL TIME)
           = 1/(3.110^-3)
           = 322.58Hz       
 ```
+![image](https://github.com/abinayasangeetha/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/119393675/6169b31b-e632-4aeb-baed-586225441ea9)
+
 
 #### FOR PULSE AT 900
 ```
@@ -258,6 +262,8 @@ FREQUENCY = 1/(TOTAL TIME)
           = 1/(3.210^-30
           = 312.5Hz
 ```
+![image](https://github.com/abinayasangeetha/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/119393675/64a1fcb0-e5db-4b71-a20a-b6f1530f5728)
+
 ## Result :
 A PWM Signal is generated using the following frequency and various duty cycles are simulated 
 
