@@ -231,6 +231,7 @@ void assert_failed(uint8_t *file, uint32_t line)
 TON = 1.75ms
 TOFF= 1.75ms
 TOTAL TIME = 3.5ms
+PRESCALER = 35
 FREQUENCY = 1/(TOTAL TIME) = 1/3.5ms = 285.7 Hz
 DUTY CYCLE = 50%
 ```
@@ -242,6 +243,7 @@ DUTY CYCLE = 50%
 TON = 2.75ms
 TOFF=0.75ms
 TOTAL TIME = 3.5ms
+PRESCALER = 35
 FREQUENCY = 1/(TOTAL TIME) = 1/3.5ms = 285.7 Hz
 DUTY CYCLE = 78.5%
 ```
@@ -254,6 +256,7 @@ DUTY CYCLE = 78.5%
 TON = 3ms
 TOFF=0.5ms
 TOTAL TIME = 3.5ms
+PRESCALER = 35
 FREQUENCY = 1/(TOTAL TIME) = 1/3.5 ms = 285.7 Hz
 DUTY CYCLE = 85.7%
 ```
