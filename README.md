@@ -51,31 +51,16 @@ In normal settings, assuming you’re using the timer module in PWM mode and gen
 
 ## Procedure:
 Step1: Open CubeMX & Create New Project
- ![image](https://user-images.githubusercontent.com/36288975/226189166-ac10578c-c059-40e7-8b80-9f84f64bf088.png)
-
 
 Step2: Choose The Target MCU & Double-Click Its Name select the target to be programmed  as shown below and click on next 
-
- ![image](https://user-images.githubusercontent.com/36288975/226189215-2d13ebfb-507f-44fc-b772-02232e97c0e3.png)
-![image](https://user-images.githubusercontent.com/36288975/226189230-bf2d90dd-9695-4aaf-b2a6-6d66454e81fc.png)
-
-![image](https://user-images.githubusercontent.com/36288975/226189280-ed5dcf1d-dd8d-43ae-815d-491085f4863b.png)
-
 Step3: Configure Timer2 Peripheral To Operate In PWM Mode With CH1 Output
-![image](https://github.com/vasanthkumarch/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/36288975/682c851a-7dfe-4089-8395-f76088d43896)
-
 
 Step4: Set The RCC External Clock Source
-![image](https://github.com/vasanthkumarch/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/36288975/8888af3b-63e2-4760-a51b-17b477763941)
-
-
 STM32 RCC External Clock Selection CubeMX
 
 Step5: Go To The Clock Configuration
 
 Step6: Set The System Clock To Be 72MHz
-![image](https://github.com/vasanthkumarch/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/36288975/4ea03faa-fb90-4b31-8079-3db5f959f2c3)
-
 
 Step7: Name & Generate The Project Initialization Code For CubeIDE or The IDE You’re Using
 
@@ -218,11 +203,11 @@ void assert_failed(uint8_t *file, uint32_t line)
 ```
 
 ## Output screen shots of proteus  :
- ![pmc7op](https://github.com/abinayasangeetha/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/119393675/8b6ede1f-87a0-4c54-81eb-343023dbab4b)
+ <img src=https://github.com/abinayasangeetha/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/119393675/8b6ede1f-87a0-4c54-81eb-343023dbab4b width=450 height=450>
 
  
  ## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE): 
- ![pmc7](https://github.com/abinayasangeetha/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/119393675/bdf0f98e-e9c7-428b-a8cc-cabf98e9f6a1)
+ <img src=https://github.com/abinayasangeetha/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/119393675/bdf0f98e-e9c7-428b-a8cc-cabf98e9f6a1 width=450 height=450>
 
 
 ## DUTY CYCLE AND FREQUENCY CALCULATION 
@@ -235,7 +220,7 @@ TOTAL TIME = 3.5ms
 FREQUENCY = 1/(TOTAL TIME) = 1/3.5ms = 285.7 Hz
 DUTY CYCLE =TON / (TOTAL TIME) * 100 = 50%
 ```
-![pmc7 1](https://github.com/abinayasangeetha/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/119393675/82fccb1c-4ea0-46cf-b9bf-325e71953b48)
+<img src=https://github.com/abinayasangeetha/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/119393675/82fccb1c-4ea0-46cf-b9bf-325e71953b48 width=450 height=450>
 
 
 #### FOR DUTY CYCLE AT 60%:
@@ -246,7 +231,7 @@ TOTAL TIME = 3.5ms
 FREQUENCY = 1/(TOTAL TIME) = 1/3.5ms = 285.7 Hz
 DUTY CYCLE =TON / (TOTAL TIME) * 100 = 78.5%
 ```
-![pmc7 2](https://github.com/abinayasangeetha/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/119393675/d2051991-d124-46cd-b13f-13b7e01ccdea)
+<img src=https://github.com/abinayasangeetha/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/119393675/d2051991-d124-46cd-b13f-13b7e01ccdea width=450 height=450>
 
 
 
@@ -258,7 +243,7 @@ TOTAL TIME = 3.5ms
 FREQUENCY = 1/(TOTAL TIME) = 1/3.5 ms = 285.7 Hz
 DUTY CYCLE = TON / (TOTAL TIME) * 100 = 85.7%
 ```
-![pmc7 3](https://github.com/abinayasangeetha/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/119393675/2cfd8286-62f2-4f4f-af71-72b86f89be5f)
+<img src=https://github.com/abinayasangeetha/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/119393675/2cfd8286-62f2-4f4f-af71-72b86f89be5f width=450 height=450>
 
 
 ## Result :
