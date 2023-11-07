@@ -22,7 +22,8 @@ The following diagram shows you how the ARR value affects the period (frequency)
 STM32 Timers – PWM Output Channels
 
 Each Capture/Compare channel is built around a capture/compare register (including a shadow register), an input stage for capture (with a digital filter, multiplexing, and Prescaler) and an output stage (with comparator and output control). The output stage generates an intermediate waveform which is then used for reference: OCxRef (active high). The polarity acts at the end of the chain.
-![image](https://github.com/vasanthkumarch/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/36288975/87457b57-4311-440b-8cbe-a9d78db4335a)
+
+<img src=https://github.com/vasanthkumarch/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/36288975/87457b57-4311-440b-8cbe-a9d78db4335a width=450 height=225>
 
 STM32 Timers In PWM Mode
 
@@ -40,47 +41,43 @@ In various applications, you’ll be in need to generate a PWM signal with a spe
 The PWM period (1/FPWM) is defined by the following parameters: ARR value, the Prescaler value, and the internal clock itself which drives the timer module FCLK. The formula down below is to be used for calculating the FPWM for the output. You can set the clock you’re using, the Prescaler, and solve for the ARR value in order to control the FPWM and get what you want.
 
 STM32 PWM Frequency Formula - STM32 PWM Frequency Equation
-![image](https://github.com/vasanthkumarch/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/36288975/aca8a20e-9b99-40c1-bada-f31accaa2ae9)
+
+<img src=https://github.com/vasanthkumarch/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/36288975/aca8a20e-9b99-40c1-bada-f31accaa2ae9 width=450 height=225>
 
 STM32 PWM Duty Cycle
 
 In normal settings, assuming you’re using the timer module in PWM mode and generating PWM signal in edge-aligned mode up-counting configuration. The duty cycle percentage is controlled by changing the value of the CCRx register. And the duty cycle equals (CCRx/ARR) [%].
-![image](https://github.com/vasanthkumarch/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/36288975/58ce0807-331e-49f7-bc8d-373f82592a92)
+
+<img src=https://github.com/vasanthkumarch/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/36288975/58ce0807-331e-49f7-bc8d-373f82592a92 width=450 height=225>
 
 
 
 ## Procedure:
-Step1: Open CubeMX & Create New Project
+1.Open a new STM32 Project.
 
-Step2: Choose The Target MCU & Double-Click Its Name select the target to be programmed  as shown below and click on next 
-Step3: Configure Timer2 Peripheral To Operate In PWM Mode With CH1 Output
+2.Create IOC file using STM32F401RB.
 
-Step4: Set The RCC External Clock Source
-STM32 RCC External Clock Selection CubeMX
+3.Select Timers followed by
 
-Step5: Go To The Clock Configuration
+4.Clock Sours -> Internal Clock
 
-Step6: Set The System Clock To Be 72MHz
+5.Channel1 -> PWM Generation CH1
 
-Step7: Name & Generate The Project Initialization Code For CubeIDE or The IDE You’re Using
+6.Change the required things in Counter Settings,PWM Generation Channel1
 
+7.Select Clock Configuration and generate the code
 
+8.define the callback function
 
-Step8.  Creating Proteus project and running the simulation
-We are now at the last part of step by step guide on how to simulate STM32 project in Proteus.
+9.Build Debug and Create 'hex.file'
 
-Step9. Create a new Proteus project and place STM32F40xx i.e. the same MCU for which the project was created in STM32Cube IDE. 
-14. After creation of the circuit as per requirement as shown below 
+10.Open a new Proteus Project
 
-<img src=https://github.com/vasanthkumarch/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/36288975/4f377f5e-bdda-489e-a416-c712c893831d width=450 height=450>
+11.Select ports STM32F401RB and OSCILLOSCOPE.
 
+12.Connect PA0 to OSCILLOSCOPE(a).
 
-Step10. Double click on the the MCU part to open settings. Next to the Program File option, give full path to the Hex file generated using STM32Cube IDE. Then set the external crystal frequency to 8M (i.e. 8 MHz). Click OK to save the changes.
-
- 
-Step14. click on debug and simulate using simulation as shown below 
-<img src=https://github.com/vasanthkumarch/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/36288975/b8efbfc2-f0c5-4106-8117-3a6e7ac87f6c width=450 height=450>
-
+13.Check for execution of the output using run optionfollowed by Calculate T-on, T-off, total time and duty time. 
 
 
  
