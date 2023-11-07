@@ -210,7 +210,7 @@ void assert_failed(uint8_t *file, uint32_t line)
 
 
 ## DUTY CYCLE AND FREQUENCY CALCULATION 
-#### FOR DUTY CYCLE AT 50%:
+#### FOR PULSE AT 50%:
 
 ```
 TON = 1.75ms
@@ -222,7 +222,7 @@ DUTY CYCLE =TON / (TOTAL TIME) * 100 = 50%
 <img src=https://github.com/abinayasangeetha/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/119393675/82fccb1c-4ea0-46cf-b9bf-325e71953b48 width=450 height=450>
 
 
-#### FOR DUTY CYCLE AT 60%:
+#### FOR PULSE AT 60%:
 ```
 TON = 2.75ms
 TOFF=0.75ms
@@ -234,7 +234,7 @@ DUTY CYCLE =TON / (TOTAL TIME) * 100 = 78.5%
 
 
 
-#### FOR DUTY CYCLE AT 70%:
+#### FOR PULSE AT 70%:
 ```
 TON = 3ms
 TOFF=0.5ms
